@@ -1,0 +1,11 @@
+
+# Lab from terraform in action book - charp 10
+
+Testing and refactoring
+
+app1.tf > create iam user with permission on EC2 instance. Create inline policy and provisions AWS keys.
+app2.tf > create iam user with persission on S3 bucket. Create inline policy and provisions AWS keys.
+main.tf > create local "credentials" file using local_file to store user cred from aws. (not recommended way for production) 
+
+``` hcl
+```
