@@ -26,5 +26,16 @@ modules/iam :
 - aws_iam_access_key
 
 
-
-https://asciiflow.com/#/share/eJyrVspLzE1VssorzcnRUcpJrEwtUrJSqo5RqohRsrK0MNWJUaoEsowsTYCsktSKEiAnRkkBEzyasodyFBOTp6DgmVdQWlKMajQWC5HE%2FUtLQFrAunGrwhQHavAD%2Bt5KobikKDMvnVjrnItSU1LzSjITc0BWBuTnZCZnphYrWCnkZBaXELaScJBN24UwIjc%2FpTQntVg%2FMzEXh55pu9A8jixLvGso0YgeQiRooEKiUapVqgUA9toVmg%3D%3D)
+/*
+                   ┌─────────────────────┐
+  Inputs           │                     │      Outputs
+                   │                     │
+Name: string       │                     │      Credentials (string)
+Policies : list    │                     │
+         ───┬──┬─► │      modules/iam    ├─────►
+                   │                     │
+                   │                     │
+                   │                     │
+                   └─────────────────────┘
+ */
+ 
