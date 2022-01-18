@@ -39,7 +39,7 @@ Policies : list    │                     │
                    └─────────────────────┘
  */
  
- ``` hcl
+
  module "iam-app1" {
   source   = "./modules/iam"
   name     = "app1"
@@ -51,4 +51,27 @@ module "iam-app2" {
   name     = "app2"
   policies = [file("./policies/app2.json")]
 }
- ```
+
+# Terraform 0.13 introduces module expansion.
+The use of modules expansion is the most recommended way for this use case, there is an example on module-expansion:
+From book "terraform in action"
+
+module-expansion/
+├── credentials
+├── main.tf
+├── modules
+│   └── iam
+│       ├── main.tf
+│       ├── outputs.tf
+│       └── variables.tf
+├── policies
+│   ├── app1.json
+│   └── app2.json
+├── providers.tf
+├── variables.tf
+└── versions.tf
+
+
+
+
+
