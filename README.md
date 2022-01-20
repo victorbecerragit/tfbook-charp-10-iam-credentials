@@ -28,7 +28,6 @@ modules/iam :
 - aws_iam_access_key
 
 ```
-/*
 
                    ┌─────────────────────┐
   Inputs           │                     │      Outputs
@@ -40,11 +39,8 @@ Policies : list    │                     │
                    │                     │
                    │                     │
                    └─────────────────────┘
-*/
-```
  
-```
-/*
+
  module "iam-app1" {
   source   = "./modules/iam"
   name     = "app1"
@@ -56,7 +52,7 @@ module "iam-app2" {
   name     = "app2"
   policies = [file("./policies/app2.json")]
 }
-*/
+
 ```
 
 ## Terraform 0.13 introduces module expansion.
@@ -65,7 +61,6 @@ The use of modules expansion is the most recommended way for this use case, ther
 From book "terraform in action"
 
 ```
-/*
 
 module-expansion/
 ├── credentials
@@ -82,7 +77,6 @@ module-expansion/
 ├── variables.tf
 └── versions.tf
 
-*/
 ```
 
 
