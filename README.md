@@ -27,8 +27,9 @@ modules/iam :
 - aws_iam_user_policy
 - aws_iam_access_key
 
-
+```
 /*
+
                    ┌─────────────────────┐
   Inputs           │                     │      Outputs
                    │                     │
@@ -39,7 +40,8 @@ Policies : list    │                     │
                    │                     │
                    │                     │
                    └─────────────────────┘
- */
+*/
+```
  
 ```
 /*
@@ -62,6 +64,9 @@ module "iam-app2" {
 The use of modules expansion is the most recommended way for this use case, there is an example on module-expansion:
 From book "terraform in action"
 
+```
+/*
+
 module-expansion/
 ├── credentials
 ├── main.tf
@@ -76,5 +81,8 @@ module-expansion/
 ├── providers.tf
 ├── variables.tf
 └── versions.tf
+
+*/
+```
 
 
